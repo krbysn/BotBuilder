@@ -36,7 +36,7 @@ import { EntityRecognizer, IFindMatchResult } from './EntityRecognizer';
 import * as consts from '../consts';
 import * as chrono from 'chrono-node';
 
-const simpleTokenizer = /\w+/ig;
+const simpleTokenizer =  /[^ -\/:-@\[-`\{-\~\s]+/ig;
 
 export type StringOrRegExp = string|RegExp;
 
